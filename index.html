@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignalRevive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>SignalRevive</h1>
+
+        <p class="subtitle">
+    Detect • Correct • Recover
+</p>
+        <div class="box">
+
+            <h2>Enter Your Message</h2>
+
+            <input type="text" id="message" placeholder="Enter message">
+
+            <button onclick="encodeMessage()">
+                Encode Message
+            </button>
+
+        </div>
+
+        <div class="result">
+
+            <h2>Result</h2>
+
+            <p>Original Data:</p>
+            <div id="original">---</div>
+
+            <p>Original Data:</p>
+<div id="original">---</div>
+
+<p>Hamming Encoded Data:</p>
+<div id="encoded">---</div>
+
+<p>Corrupted Data:</p>
+<div id="corrupted">---</div>
+
+<p id="errorPosition">Error Position: ---</p>
+
+<button onclick="detectError()">
+    Detect & Correct Error
+</button>
+
+<p id="status">Waiting for message...</p>
+
+<p>Recovered Data:</p>
+<div id="recovered">---</div>
+
+<p>Recovered Message:</p>
+<div id="recoveredMessage">---</div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
